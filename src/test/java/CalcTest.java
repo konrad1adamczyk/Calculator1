@@ -8,11 +8,13 @@
 public class CalcTest {
 
     @Test
-    public void testGetEmail() {
-        Email email = getEmail("ivanov@mail.ru");
-        assertEquals("ivanov", email.name);
-        assertEquals("mail", email.domainName);
-        assertEquals("ru", email.domainZone);
+    public void testCalc() {
+        SimpleCalculator calc = new SimpleCalculator();
+
+        assertEquals(11, calc.compute(5,"+",6));
+        assertEquals(4, calc.compute(2,"*",2));
+        assertEquals(2, calc.compute(10,"/",5));
+        assertEquals(2, calc.compute(9,"-",7));
 
     }
 }

@@ -14,7 +14,7 @@ public class SimpleCalculator {
         System.out.println(compute(left, op, right));
     }
 
-    private static int compute(int left, String op, int right) {
+    public static int compute(int left, String op, int right) {
         switch (op.charAt(0)) {
             case '+':
                 return left + right;
